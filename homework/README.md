@@ -27,7 +27,7 @@ jQuery로 작성되어 있는 로그인 폼을 Vue.js 코드로 변환해보는 
 
 ![fork](./fork.gif)
 
-2. 포크된 리포지토리를 [클론(clone)](https://www.git-tower.com/learn/git/commands/git-clone/)한뒤 homework 폴더에서 아래 명령어로 뷰 프로젝트를 생성합니다. 프로젝트 이름은 본인 이름을 영문으로 기재해 주세요 😄
+2. 포크된 리포지토리를 [클론(clone)](https://www.git-tower.com/learn/git/commands/git-clone/)한뒤 **homework 폴더에서** 아래 명령어로 뷰 프로젝트를 생성합니다. 프로젝트 이름은 본인 이름을 영문으로 기재해 주세요 😄
 
 ```bash
 # 명령어 예시
