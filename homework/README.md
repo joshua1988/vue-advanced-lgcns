@@ -27,7 +27,7 @@ jQuery로 작성되어 있는 로그인 폼을 Vue.js 코드로 변환해보는 
 
 ![fork](./fork.gif)
 
-2. 포크된 리포지토리를 [클론(clone)](https://www.git-tower.com/learn/git/commands/git-clone/)한뒤 homework 폴더에서 아래 명령어로 뷰 프로젝트를 생성합니다.
+2. 포크된 리포지토리를 [클론(clone)](https://www.git-tower.com/learn/git/commands/git-clone/)한뒤 homework 폴더에서 아래 명령어로 뷰 프로젝트를 생성합니다. 프로젝트 이름은 본인 이름을 영문으로 기재해 주세요 :smile
 
 ```bash
 # 명령어 예시
@@ -36,14 +36,14 @@ vue create "본인 이름"
 vue create jangkeehyo
 ```
 
-> Vue CLI로 생성할 때 Vue.js 버전은 Vue 2를 선택해 주세요 :)
+> Vue CLI로 생성할 때 Vue.js 버전은 Vue 2를 선택해 주세요 :smile
 
-3. `homework/index.html` 파일의 내용을 Vue.js 문법으로 변환합니다. 이 때 위에 안내된 실습 목표를 모두 달성할 수 있도록 최대한 많은 Vue.js 개념을 활용하여 구현합니다.
-4. Vue.js로 변환한 내용을 커밋(commit)한 뒤 `https://github.com/joshua1988/vue-advanced-lgcns` 리포지토리를 대상으로 **포크된 리포지토리에서** 풀 리퀘스트(Pull Request)를 생성합니다.
+3. 포크된 리포지토리의 `homework/index.html` 파일 내용을 뷰 문법으로 변환합니다. 이때 위에 안내된 실습 목표를 모두 달성할 수 있도록 노력해 주세요 :smile
+4. 작업한 내용을 [커밋(commit)](https://git-scm.com/docs/git-commit) & [푸시(push)](https://git-scm.com/docs/git-push) 한 뒤 `https://github.com/joshua1988/vue-advanced-lgcns` 리포지토리를 대상으로 **포크된 리포지토리에서** 풀 리퀘스트(Pull Request)를 생성합니다.
 
 ![pr](./pr.gif)
 
-풀 리퀘스트 제목은 본인 이름으로 기재 부탁드립니다 :)
+:warning 풀 리퀘스트 제목은 본인 이름으로 기재 부탁드립니다 :smile
 
 ## UI 요구 사항
 
