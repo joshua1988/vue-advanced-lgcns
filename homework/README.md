@@ -13,18 +13,21 @@ jQuery로 작성되어 있는 회원가입 폼을 Vue.js 코드로 변환해보�
 
 ## 실습 환경
 
-- Node.js LTS 설치
-- 최신 Vue CLI 설치
+- [Node.js LTS](https://nodejs.org/ko/) 설치
+- [최신 Vue CLI](https://cli.vuejs.org/guide/installation.html) 설치
 - 선호하는 웹 개발 툴
 
 ## 실습 대상 UI
 
 ![ui](./ui.png)
 
-## 실습 절차
+## 실습 절차 및 제출 안내
 
-1. 현재 깃헙 리포지토리를 포크(fork)합니다.
-2. 포크된 리포지토리를 클론한뒤 homework 폴더에서 아래 명령어로 뷰 프로젝트를 생성합니다.
+1. 현재 깃헙 리포지토리를 [포크(fork)](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)합니다.
+
+![fork](./fork.gif)
+
+2. 포크된 리포지토리를 [클론(clone)](https://www.git-tower.com/learn/git/commands/git-clone/)한뒤 homework 폴더에서 아래 명령어로 뷰 프로젝트를 생성합니다.
 
 ```bash
 # 명령어 예시
@@ -33,7 +36,11 @@ vue create "본인 이름"
 vue create jangkeehyo
 ```
 
+> Vue CLI로 생성할 때 Vue.js 버전은 Vue 2를 선택해 주세요 :)
+
 3. `homework/index.html` 파일의 내용을 Vue.js 문법으로 변환합니다. 이 때 위에 안내된 실습 목표를 모두 달성할 수 있도록 최대한 많은 Vue.js 개념을 활용하여 구현합니다.
-4. Vue.js로 변환한 내용을 커밋(commit)한 뒤 `https://github.com/joshua1988/vue-advanced-lgcns` 리포지토리를 대상으로 풀 리퀘스트(Pull Request)를 생성합니다.
+4. Vue.js로 변환한 내용을 커밋(commit)한 뒤 `https://github.com/joshua1988/vue-advanced-lgcns` 리포지토리를 대상으로 **포크된 리포지토리에서** 풀 리퀘스트(Pull Request)를 생성합니다.
 
+![pr](./pr.gif)
 
+풀 리퀘스트 제목은 본인 이름으로 기재 부탁드립니다 :)
