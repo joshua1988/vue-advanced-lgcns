@@ -1,6 +1,6 @@
 ## 실습 과제 안내
 
-jQuery로 작성되어 있는 회원가입 폼을 Vue.js 코드로 변환해보는 실습입니다.
+jQuery로 작성되어 있는 로그인 폼을 Vue.js 코드로 변환해보는 실습입니다.
 
 ## 실습 목표
 
@@ -44,3 +44,20 @@ vue create jangkeehyo
 ![pr](./pr.gif)
 
 풀 리퀘스트 제목은 본인 이름으로 기재 부탁드립니다 :)
+
+## UI 요구 사항
+
+- [ ] (필수) 로그인에 필요한 아이디와 패스워드를 입력할 수 있는 2개의 인풋 박스가 존재한다.
+- [ ] (필수) `Sign In` 버튼을 눌렀을 때 인풋 박스에 입력된 아이디와 패스워드 값을 서버에 전달한다.
+
+```
+POST https://jsonplaceholder.typicode.com/users/
+Content-Type application/json
+Request Parameters
+{
+  name: '로그인 아이디',
+  password: '비밀번호'
+}
+```
+
+- [ ] (선택) 비밀번호의 길이가 6자리 이하인 경우 로그인 버튼을 누를 수 없고 패스워드를 6자 이상 입력하라는 문구를 표시한다.
