@@ -337,15 +337,13 @@ new Vuex.Store({
 
 #### Vue CLI를 이용한 프로젝트 생성 방법
 
-- ESLint + Prettier 설정
-- VSCode를 사용하는 경우 jsconfig.json 파일 설정
-- 
-
+- [ESLint + Prettier 설정](https://joshua1988.github.io/web-development/vuejs/boost-productivity/)
+- [VSCode를 사용하는 경우 jsconfig.json 파일 설정](https://github.com/joshua1988/vue-til/blob/1_setup/jsconfig.json)
 
 #### 웹 서비스 개발 절차
 
 1. CLI를 이용한 프로젝트 구성
-2. 페이지 단위의 라우터 설계(사용자별 진입 권한, 리다이렉트, fallback 등)
+2. 페이지 단위의 라우터 설계(사용자별 진입 권한, 다이나믹 라우팅, fallback 등)
 3. 페이지별 UI 컴포넌트 설계 및 구현
 4. api 함수 모듈화 및 REST API 인터페이스 정리
 5. 선택적으로 Vuex, 외부 라이브러리 활용
