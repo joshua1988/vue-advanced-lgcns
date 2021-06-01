@@ -163,6 +163,8 @@ Presentational & Container 컴포넌트
 
 #### ES6+
 
+간결한 코드 작성을 돕는 최신 자바스크립트 문법. [바벨(Babel)](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=MYewdgzgLgBBCuBbGBeGAKAhgGhgIwEpUA-GTGAanwG4g&debug=false&forceAllTransforms=true&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env&prettier=false&targets=&version=7.14.4&externalPlugins=)로 구 브라우저도 호환할 수 있도록 변환 가능.
+
 ##### const, let
 
 변수를 선언하는 방법
@@ -245,7 +247,7 @@ sum(10, 20);
 
 #### Vuex
 
-최소 2~3군데 이상 쓰이는 공통 뷰 인스턴스의 데이터를 효율적으로 관리하는 방법
+최소 2~3군데 이상 쓰이는 뷰 인스턴스의 데이터를 효율적으로 관리하는 방법
 
 ```js
 new Vuex.Store({
@@ -324,6 +326,7 @@ export default {
 import user from './user.js'
 
 new Vuex.Store({
+  strict: process.env.NODE_ENV === 'development',
   modules: {
     user: user
   },
