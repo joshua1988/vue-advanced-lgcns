@@ -6,6 +6,22 @@ LG CNS 임직원 대상 *구해줘코딩! Vue.js 심화편* 강의 자료 리포
 
 - [Cracking Vue.js](https://joshua1988.github.io/vue-camp)
 
+## 1회차 언급 자료
+
+- [서버 사이드 렌더링이란?](https://joshua1988.github.io/vue-camp/nuxt/ssr.html#%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81)
+- [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+- [라우터 네비게이션 가드](https://router.vuejs.org/guide/advanced/navigation-guards.html#in-component-guards)
+- [React vs Vue](https://joshua1988.github.io/web-development/translation/vue-or-react/#%ED%81%B0-%EA%B7%9C%EB%AA%A8%EC%9D%98-%EC%95%B1%EC%9D%84-%EB%A7%8C%EB%93%9C%EC%8B%A0%EB%8B%A4%EB%A9%B4-react)
+- [Vue.js Developers](https://vuejsdevelopers.com/)
+- [Reactivity in Depth](https://vuejs.org/v2/guide/reactivity.html)
+- [NHN Dooray](https://dooray.com/)
+- [Vue Composition API for Vue 2](https://github.com/vuejs/composition-api)
+- [Vue 3 RFC](https://github.com/vuejs/rfcs/pull/42)
+- [IE11 drops in Vue 3](https://github.com/vuejs/rfcs/discussions/296)
+- [Open Graph Protocol](https://ogp.me/)
+- [SEO 가이드](https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=ko)
+
+
 ## 개발 환경 구성
 
 강의에 앞서 아래 환경들로 구성 부탁드립니다 :)
