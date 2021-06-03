@@ -236,7 +236,7 @@ var { name, age } = obj;
 
 ```js
 // math.js
-function sum(a, b) {
+export function sum(a, b) {
   return a + b;
 }
 
