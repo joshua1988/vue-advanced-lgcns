@@ -5,7 +5,7 @@
         Username
       </label>
       <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-        id="username" type="text" placeholder="Username" v-model="name">
+        id="username" type="text" placeholder="Username" v-model="username">
     </div>
 
     <div class="mb-6">
@@ -36,14 +36,14 @@ import { fetchUser } from '../api';
 export default {
   data() {
     return {
-      name: '',
+      username: '',
       password: '',
       isError: false,
     }
   },
   methods: {
     login() {
-      fetchUser(this.name, this.password)
+      fetchUser(this.username, this.password)
         .then((response) => {
           console.log(response);
           alert(`${response.data.name}님 안녕하세요.`);
@@ -54,7 +54,7 @@ export default {
         .finally(() => this.clearInput());
     },
     clearInput() {
-      this.name = '';
+      this.username = '';
       this.password = '';
     },
     validatePassword() {
