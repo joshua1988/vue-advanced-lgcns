@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import LoginView from '../views/LoginView';
+import LoginPage from '../views/LoginPage';
 
 Vue.use(VueRouter);
 
-export const router = new VueRouter({
+export default new VueRouter({
   mode: 'history',
   routes: [
     {
@@ -14,7 +14,7 @@ export const router = new VueRouter({
     {
       path: '/login',
       name: 'login',
-      component: LoginView
+      component: LoginPage
     }
   ]
 });

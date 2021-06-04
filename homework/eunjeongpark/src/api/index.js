@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const axiosApi = axios.create({
+const api = axios.create({
   baseURL: 'https://jsonplaceholder.typicode.com'
 });
 
 function fetchUser(name, password) {
-  return axiosApi.post('/users', {
+  return api.post('/users', {
     name,
     password
   })
