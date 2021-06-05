@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import LoginPage from "@/views/LoginPage.vue";
-import DropdownPage from "@/views/DropdownPage.vue";
+// import LoginPage from "@/views/LoginPage.vue";
+// import DropdownPage from "@/views/DropdownPage.vue";
 import ModalPage from "@/views/ModalPage.vue";
 import PageNotFoundPage from "@/views/PageNotFoundPage.vue";
 
@@ -11,11 +11,11 @@ export default new VueRouter({
   routes: [
     {
       path: "/login",
-      component: LoginPage
+      component: () => import("./views/LoginPage.vue")
     },
     {
       path: "/dropdown",
-      component: DropdownPage
+      component: () => import("./views/DropdownPage.vue")
     },
     {
       path: "/modal",

@@ -6,6 +6,18 @@ LG CNS 임직원 대상 *구해줘코딩! Vue.js 심화편* 강의 자료 리포
 
 - [Cracking Vue.js](https://joshua1988.github.io/vue-camp)
 
+## 2회차 언급 자료
+
+- [VuePress](https://vuepress.vuejs.org/)
+- [VuePress 시작하기 튜토리얼](https://joshua1988.github.io/vue-camp/vuepress/learning-note.html)
+- [Vue.js 개발 생산성을 높여주는 도구 3가지](https://joshua1988.github.io/web-development/vuejs/boost-productivity/)
+- [eslint-plugin-vue](https://eslint.vuejs.org/rules/order-in-components.html)
+- [Vue.js Style Guide](https://kr.vuejs.org/v2/style-guide/index.html)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vue Template Explorer](https://template-explorer.vuejs.org/)
+- [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
+- [Vue.js Enterprise Boilerplate](https://github.com/bencodezen/vue-enterprise-boilerplate)
+
 ## 개발 환경 구성
 
 강의에 앞서 아래 환경들로 구성 부탁드립니다 :)
