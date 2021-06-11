@@ -26,6 +26,19 @@ LG CNS 임직원 대상 *구해줘코딩! Vue.js 심화편* 강의 자료 리포
 - [reactivity in depth](https://vuejs.org/v2/guide/reactivity.html)
 - [router history mode server config](https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations)
 
+## 4회차 언급 자료
+
+- [window history api](https://developer.mozilla.org/ko/docs/Web/API/Window/history)
+- [vue portal](https://github.com/LinusBorg/portal-vue)
+- [cypress](https://www.cypress.io/)
+- [vue test utils](https://vue-test-utils.vuejs.org/guides/#getting-started)
+- [vue test utils 튜토리얼](https://joshua1988.github.io/vue-camp/testing/overview.html#%EB%AC%B4%EC%97%87%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%95%A0-%EA%B2%83%EC%9D%B8%EA%B0%80)
+- [kent c dodds blog](https://kentcdodds.com/blog)
+- [vue testing library](https://github.com/testing-library/vue-testing-library)
+- [vue test tutorials](https://github.com/joshua1988/vue-test-tutorial/tree/master/src/components/event-emit)
+- [vue3 ie11 drops](https://github.com/vuejs/rfcs/discussions/296)
+- [vue composition api](https://github.com/vuejs/composition-api)
+
 ## 개발 환경 구성
 
 강의에 앞서 아래 환경들로 구성 부탁드립니다 :)

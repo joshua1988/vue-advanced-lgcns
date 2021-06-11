@@ -19,7 +19,7 @@
             class="flex-shrink-0 h-6 w-6 rounded-full"
           />
           <span class="ml-3 block truncate">
-            Tom Cook
+            {{ selectedName }}
           </span>
         </span>
         <span
@@ -41,17 +41,6 @@
           </svg>
         </span>
       </button>
-
-      <!--
-      Select popover, show/hide based on select state.
-
-      Entering: ""
-        From: ""
-        To: ""
-      Leaving: "transition ease-in duration-100"
-        From: "opacity-100"
-        To: "opacity-0"
-    -->
       <div
         class="absolute mt-1 w-full rounded-md bg-white shadow-lg"
         v-if="isDropdownOpen"
@@ -63,148 +52,21 @@
           aria-activedescendant="listbox-item-3"
           class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
         >
-          <!--
-          Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-
-          Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
-        -->
-          <li
-            id="listbox-item-0"
-            role="option"
-            class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 list-item"
-            @mouseenter="highlightItem"
-            @mouseleave="unhighlightItem"
-            @click="selectDropdown"
-          >
-            <div class="flex items-center">
-              <img
-                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                alt=""
-                class="flex-shrink-0 h-6 w-6 rounded-full"
-              />
-              <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-              <span class="ml-3 block font-normal truncate dropdown-name">
-                Wade Cooper
-              </span>
-            </div>
-
-            <!--
-            Checkmark, only display for selected option.
-
-            Highlighted: "text-white", Not Highlighted: "text-indigo-600"
-          -->
-            <span class="absolute inset-y-0 right-0 flex items-center pr-4">
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-          </li>
-          <li
-            id="listbox-item-0"
-            role="option"
-            class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9"
-          >
-            <div class="flex items-center">
-              <img
-                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-                class="flex-shrink-0 h-6 w-6 rounded-full"
-              />
-              <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-              <span class="ml-3 block font-normal truncate">
-                Arlene Mccoy
-              </span>
-            </div>
-            <!-- <span class="absolute inset-y-0 right-0 flex items-center pr-4">
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span> -->
-          </li>
-          <li
-            id="listbox-item-0"
-            role="option"
-            class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9"
-          >
-            <div class="flex items-center">
-              <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                alt=""
-                class="flex-shrink-0 h-6 w-6 rounded-full"
-              />
-              <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-              <span class="ml-3 block font-normal truncate">
-                Devon Webb
-              </span>
-            </div>
-            <!-- <span class="absolute inset-y-0 right-0 flex items-center pr-4">
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span> -->
-          </li>
-          <li
-            id="listbox-item-0"
-            role="option"
-            class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9"
-          >
-            <div class="flex items-center">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-                class="flex-shrink-0 h-6 w-6 rounded-full"
-              />
-              <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-              <span class="ml-3 block font-normal truncate">
-                Tanya Fox
-              </span>
-            </div>
-            <!-- <span class="absolute inset-y-0 right-0 flex items-center pr-4">
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span> -->
-          </li>
+          <!-- <DropdownItem personName="Wade Cooper"></DropdownItem>
+          <DropdownItem personName="Arlene"></DropdownItem>
+          <DropdownItem></DropdownItem>
+          <DropdownItem></DropdownItem> -->
+          <!-- <p @mouseenter="highlightListItem">hihi</p> -->
+          <DropdownItem
+            v-for="(person, index) in people"
+            :key="index"
+            :personName="person.name"
+            :imageUrl="person.imageUrl"
+            :checked="person.name === selectedName"
+            :isMouseOver="person.name === mouseOverName"
+            @select="selectDropdownItem"
+            @mouseenter.native="highlightListItem(person.name)"
+          ></DropdownItem>
 
           <!-- More options... -->
         </ul>
@@ -214,28 +76,68 @@
 </template>
 
 <script>
+import DropdownItem from "../components/DropdownItem.vue";
+
+const PEOPLE = [
+  {
+    name: "Wade Cooper",
+    imageUrl:
+      "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+  },
+  {
+    name: "Arlene Mccoy",
+    imageUrl:
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+  },
+  {
+    name: "Devon Webb",
+    imageUrl:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+  },
+  {
+    name: "Tanya Fox",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+  }
+];
+
 export default {
+  components: { DropdownItem },
+
   data() {
     return {
-      isDropdownOpen: false
+      isDropdownOpen: false,
+      selectedName: PEOPLE[0].name,
+      people: PEOPLE.map((person, index) => ({ ...person, id: index })),
+      mouseOverName: ""
     };
   },
 
   methods: {
-    highlightItem() {
+    selectDropdownItem(name) {
+      this.selectedName = name;
+    },
+    highlightListItem(name) {
+      // console.log("highlight");
+      this.mouseOverName = name;
+    },
+    /**
+     * @param {MouseEvent} event 마우스 이벤트야
+     */
+    highlightItem(event) {
       // Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
       event.target.classList.remove("text-gray-900");
       event.target.classList.add("text-white", "bg-indigo-600");
-    },
-    unhighlightItem() {
-      event.target.classList.remove("text-white", "bg-indigo-600");
-      event.target.classList.add("text-gray-900");
-    },
-    selectDropdown() {
-      const selectedListElement = event.target.closest(".list-item");
-      const selectedName = selectedListElement.querySelector(".dropdown-name");
-      console.log(selectedName);
     }
+    // unhighlightItem() {
+    //   event.target.classList.remove("text-white", "bg-indigo-600");
+    //   event.target.classList.add("text-gray-900");
+    // },
+    // selectDropdown() {
+    //   const selectedListElement = event.target.closest(".list-item");
+    //   const selectedName = selectedListElement.querySelector(".dropdown-name");
+    //   console.log(selectedName);
+    // }
   }
 };
 </script>

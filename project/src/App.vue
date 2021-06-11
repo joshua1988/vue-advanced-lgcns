@@ -243,14 +243,24 @@
     </header>
     <main>
       <div class="max-w-7xl mx-auto">
-        <router-view></router-view>
+        <router-view :isModalOpen="isModalOpen"></router-view>
       </div>
     </main>
+
+    <portal-target name="modal">
+      <AlertModal v-if="isModalOpen"></AlertModal>
+    </portal-target>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isModalOpen: ""
+    };
+  }
+};
 </script>
 
 <style></style>
