@@ -18,6 +18,14 @@ LG CNS 임직원 대상 *구해줘코딩! Vue.js 심화편* 강의 자료 리포
 - [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
 - [Vue.js Enterprise Boilerplate](https://github.com/bencodezen/vue-enterprise-boilerplate)
 
+## 3회차 언급 자료
+
+- [jsconfig.json](https://github.com/joshua1988/vue-til/blob/1_setup/jsconfig.json)
+- [workbox](https://joshua1988.github.io/vue-camp/pwa/workbox.html)
+- [js generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+- [reactivity in depth](https://vuejs.org/v2/guide/reactivity.html)
+- [router history mode server config](https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations)
+
 ## 개발 환경 구성
 
 강의에 앞서 아래 환경들로 구성 부탁드립니다 :)
