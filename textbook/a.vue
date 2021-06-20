@@ -1,23 +1,50 @@
 <template>
-  <p>{{ str }}</p>
+  <div>
+    {{ counter }}
+  </div>
 </template>
 
 <script>
-export default {
+import { displayProfile } from '@/utils'
+
+export default defineComponent({
   data() {
     return {
-      str: 'hi',
-      // apiUrl: 'users/1'
+      counter: 1
     }
   },
-  methods: {
-    fetchUser() {
-      fetchUserById().then().catch()
-      // const url = 'users/1'
-      // axios.get(this.apiUrl).then().catch();
+
+  setup() {
+    const counter = ref(0)
+    displayProfile();
+
+    return { counter }
+  },
+
+  computed: {
+    doubleCounter() {
+      return this.counter * 2;
     }
+  },
+  
+  methods: {
+    addCounter: function() {
+      this.counter++;
+    },
+    // X
+    addCounter: () => {
+      this.counter++;
+    }
+  },
+
+  created: function() {
+
+  },
+  // X
+  created: () => {
+
   }
-}
+})
 </script>
 
 <style>
